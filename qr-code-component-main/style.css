@@ -1,2 +1,58 @@
 @charset "UTF-8";
+@font-face {
+    font-family: [Outfit];
+    src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: #7B869D;
+    --Dark_blue: hsl(218, 44%, 22%);
+}
+
+*{
+    font-family:  'Outfit', sans-serif;;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 90px;
+    background-color: var(--Light_gray);
+}
+
+#card{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: var(--White);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.274);
+}
+
+h1{
+    color: var(--Dark_blue);
+    font-size: 28px;
+    font-weight: 700;
+}
+p{
+    font-size: 15px;
+    text-align: center;
+    color: var(--Grayish_blue);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#qrcode > img{
+    width: 365px;
+    border-radius: 10px;
+    
+}
+
+
+.attribution{
+    font-size: 0.9em;
+}
 

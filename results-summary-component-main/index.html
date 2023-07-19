@@ -8,7 +8,7 @@
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,29 +16,41 @@
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <div id="result">
+    <h1 id="resultTitle">Your Result</h1>
+    <div id="scoreCircle">
+      <span id="scoreNumber">76</span>
+      <p>of 100</p>
+    </div>
+    <h2>Great</h2>
+    <p>You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+  <div id="summary">
+    <h1>Summary</h1>
+    <div>
+      <p>
+        <span id="reaction"><img src="design/icons8-raio-64 (1).png" alt="" width="20"> Reaction</span>
+        <span class="firstNumber">80</span> <span class="secondNumber">/ 100</span>
+      </p>
+      <p>
+        <span id="memory">Memory</span>
+        <span class="firstNumber">92</span> <span class="secondNumber">/ 100</span>
+      </p>
+      <p>
+        <span id="verbal">Verbal</span>
+        <span class="firstNumber">61</span> <span class="secondNumber">/ 100</span>
+      </p>
+      <p>
+        <span id="visual">Visual</span>
+        <span class="firstNumber">72</span> <span class="secondNumber">/ 100</span>
+      </p>
+    </div>
+    <button>Continue</button>
+  </div>
   
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
